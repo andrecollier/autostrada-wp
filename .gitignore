@@ -1,0 +1,22 @@
+# Environment (inneholder paths/config)
+.env
+
+# Database dumps (kan bli store)
+database/exports/*.sql
+database/exports/*.sql.gz
+
+# OS filer
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (hvis relevant for bygg)
+node_modules/
+
+# Logs
+*.log

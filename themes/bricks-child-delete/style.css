@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Bricks Child Theme
+ Theme URI:    https://bricksbuilder.io/
+ Description:  Use this child theme to extend Bricks.
+ Author:       Bricks
+ Author URI:   https://bricksbuilder.io/
+ Template:     bricks
+ Version:      1.0
+ Text Domain:  bricks
+*/
+
+.bricks-element-nav-menu .bricks-mobile-menu-wrapper ul.bricks-mobile-menu{
+    padding-bottom: 85px;
+}
+

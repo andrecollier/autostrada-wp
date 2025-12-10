@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sircon-library\n"
+"POT-Creation-Date: 2021-09-10T11:17:03+02:00\n"
+"PO-Revision-Date: 2021-09-10 11:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .webpack\n"
+"X-Poedit-SearchPathExcluded-1: .git\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#. Plugin Name of the plugin
+msgid "Sircon Library"
+msgstr "Sircon Library"
+
+#. Description of the plugin
+msgid ""
+"A Collection of library files and utilities used by other Sircon plugins and "
+"themes"
+msgstr ""
+"En samling bibliotekfiler og verktøy som brukes av andre Sircon-utvidelser "
+"og temaer"
+
+#. Author of the plugin
+msgid "Sircon Norge AS"
+msgstr "Sircon Norge AS"
+
+#. Author URI of the plugin
+msgid "https://sircon.no/"
+msgstr "https://sircon.no/"
+
+#: classes/Content/Calendar.php:56
+msgid "Week"
+msgstr "Uke"
+
+#: classes/Content/Calendar.php:58
+msgid "Mo"
+msgstr "Ma"
+
+#: classes/Content/Calendar.php:59
+msgid "Tu"
+msgstr "Ti"
+
+#: classes/Content/Calendar.php:60
+msgid "We"
+msgstr "On"
+
+#: classes/Content/Calendar.php:61
+msgid "Th"
+msgstr "To"
+
+#: classes/Content/Calendar.php:62
+msgid "Fr"
+msgstr "Fr"
+
+#: classes/Content/Calendar.php:63
+msgid "Sa"
+msgstr "Lø"
+
+#: classes/Content/Calendar.php:64
+msgid "Su"
+msgstr "Sø"
+
+#. translators: %d will be replaced by the HTTP response code
+#: classes/Exceptions/APIResponseCodeException.php:20
+msgid "API Error: Unexpected response code %d"
+msgstr "API-feil: Uventet responskode %d"
+
+#: classes/Formfield/File.php:67
+msgid "Select/upload file"
+msgstr "Velg/Last opp fil"
+
+#: classes/Formfield/File.php:68 classes/Formfield/Media.php:79
+msgid "Remove"
+msgstr "Fjern"
+
+#: classes/Formfield/Media.php:78
+msgid "Select/upload image"
+msgstr "Velg/Last opp bilde"
+
+#: classes/Formfield/Multifield.php:34
+msgid "Add row"
+msgstr "Legg til rad"
+
+#. translators: %s will be replaced by the class of the Formfield
+#: classes/Formfield/Multifield.php:116
+msgid "Field type [%s] not supported in multifields"
+msgstr "Felttypen [%s] er ikke støttet i multifields"
+
+#. translators: %s will be replaced by the posttype/taxonomy singular name
+#: classes/PostType.php:66 classes/Taxonomy.php:62
+msgctxt "singular"
+msgid "Add new %s"
+msgstr "Legg til ny %s"
+
+#. translators: %s will be replaced by the posttype singular name
+#: classes/PostType.php:68
+msgctxt "singular"
+msgid "Add new item %s"
+msgstr "Legg til ny %s"
+
+#. translators: %s will be replaced by the posttype/taxonomy singular name
+#: classes/PostType.php:70 classes/Taxonomy.php:59
+msgctxt "singular"
+msgid "Edit %s"
+msgstr "Rediger %s"
+
+#. translators: %s will be replaced by the posttype/taxonomy singular name
+#: classes/PostType.php:72 classes/Taxonomy.php:63
+msgctxt "singular"
+msgid "New %s"
+msgstr "Ny %s"
+
+#. translators: %s will be replaced by the posttype singular name
+#: classes/PostType.php:74
+msgctxt "singular"
+msgid "Show %s"
+msgstr "Vis %s"
+
+#. translators: %s will be replaced by the posttype/taxonomy singular name
+#: classes/PostType.php:76 classes/Taxonomy.php:51
+msgctxt "plural"
+msgid "Search %s"
+msgstr "Søk i %s"
+
+#. translators: %s will be replaced by the posttype plural name
+#: classes/PostType.php:78
+msgctxt "plural"
+msgid "No %s was found"
+msgstr "Ingen %s ble funnet"
+
+#. translators: %s will be replaced by the posttype plural name
+#: classes/PostType.php:80
+msgctxt "plural"
+msgid "No %s were found in the trash"
+msgstr "Ingen %s ble funnet i søppelbøtta"
+
+#. translators: %s will be replaced by the posttype/taxonomy singular name
+#: classes/PostType.php:82 classes/Taxonomy.php:58
+msgctxt "singular"
+msgid "Parent %s:"
+msgstr "Forelder %s:"
+
+#. translators: %s will be replaced by the selected page title
+#: classes/Rewrite.php:17
+msgid ""
+"Could not create a rewrite for the page \"%s\" because its URL is the same "
+"as the frontpage."
+msgstr ""
+"Kunne ikke opprette en omskrivning av siden \"%s\" fordi URLen er den samme "
+"som forsiden."
+
+#. translators: %s will be replaced by the taxonomy plural name
+#: classes/Taxonomy.php:53
+msgctxt "plural"
+msgid "Popular %s"
+msgstr "Populære %s"
+
+#. translators: %s will be replaced by the taxonomy plural name
+#: classes/Taxonomy.php:55
+msgctxt "plural"
+msgid "All %s"
+msgstr "Alle %s"
+
+#. translators: %s will be replaced by the taxonomy singular name
+#: classes/Taxonomy.php:57
+msgctxt "singular"
+msgid "Parent %s"
+msgstr "Forelder %s"
+
+#. translators: %s will be replaced by the taxonomy singular name
+#: classes/Taxonomy.php:61
+msgctxt "singular"
+msgid "Update %s"
+msgstr "Uppdater %s"
+
+#. translators: %s will be replaced by the taxonomy plural name
+#: classes/Taxonomy.php:65
+msgctxt "plural"
+msgid "Separate %s with commas"
+msgstr "Separer %s med komma"
+
+#. translators: %s will be replaced by the taxonomy plural name
+#: classes/Taxonomy.php:67
+msgctxt "plural"
+msgid "Add or remove %s"
+msgstr "Legg til eller fjern %s"
+
+#. translators: %s will be replaced by the taxonomy plural name
+#: classes/Taxonomy.php:69
+msgctxt "plural"
+msgid "Choose from the most used %s"
+msgstr "Velg fra mest brukte %s"
+
+#: classes/Updater/Automatic.php:49 classes/Updater/Plugin.php:60
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr "En uventet HTTP-feil oppsto i API-spørringen."
+
+#: classes/Updater/Automatic.php:49 classes/Updater/Plugin.php:60
+msgid "Try again"
+msgstr "Prøv på nytt"
+
+#: classes/Updater/Automatic.php:54 classes/Updater/Plugin.php:65
+msgid "An unknown error occurred"
+msgstr "En uventet feil har oppstått"
+
+#. translators: %s will be replaced by a link to the license page
+#: classes/Updater/Licenser.php:21 classes/Updater/Licenser.php:22
+#: classes/Updater/Licenser.php:94
+msgid "Sircon Licenses"
+msgstr "Sircon Lisenser"
+
+#: classes/Updater/Licenser.php:67
+msgid "Themes"
+msgstr "Tema"
+
+#: classes/Updater/Licenser.php:71
+msgid "Plugins"
+msgstr "Utvidelser"
+
+#. translators: %s will be replaced by the plugin/theme name
+#: classes/Updater/Licenser.php:76
+msgid "%s license key"
+msgstr "%s lisensnøkkel"
+
+#. translators: %s will be replaced by the plugin/theme name
+#: classes/Updater/Licenser.php:92
+msgid "Invalid license key for %s"
+msgstr "Ugyldig lisensnøkkel for %s"
+
+#. translators: %s will be replaced by a link to the license page
+#: classes/Updater/Licenser.php:94
+msgid "Update your license key here: %s"
+msgstr "Oppdater lisensnøkkelen her: %s"
+
+#: classes/Userdata.php:35
+msgid "Extra fields"
+msgstr "Ekstra felter"
+
+#: sircon-library.php:101
+msgid "Select image"
+msgstr "Velg  bilde"
+
+#: sircon-library.php:102
+msgid "Select file"
+msgstr "Velg fil"

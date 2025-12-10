@@ -1,0 +1,17 @@
+{
+	"domain": "sircon-library",
+	"locale_data": {
+		"sircon-library": {
+			"": {
+				"domain": "sircon-library",
+				"lang": "nb"
+			},
+			"Select image": [
+				"Velg bilde"
+			],
+			"Select file": [
+				"Velg fil"
+			]
+		}
+	}
+}

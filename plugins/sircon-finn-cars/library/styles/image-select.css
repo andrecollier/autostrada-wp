@@ -1,0 +1,14 @@
+.fieldtype-image .custom-img-preview {
+	padding: 0;
+	margin: 20px auto;
+	background: #eee;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.fieldtype-image .custom-img-preview img {
+	max-width:100%;
+	height:auto!important;
+	display:block;
+	opacity: 0;
+	margin: 0;
+}

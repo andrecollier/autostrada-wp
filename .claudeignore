@@ -1,0 +1,78 @@
+# ===========================================
+# Autostrada WP CLI - Claude Ignore
+# ===========================================
+# Filer/mapper Claude IKKE skal lese eller endre
+# Dette holder fokus på egenutviklet kode
+
+# -------------------------------------------
+# WordPress Core (aldri endre)
+# -------------------------------------------
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+
+# -------------------------------------------
+# Tredjeparts plugins (ikke endre)
+# -------------------------------------------
+plugins/acf-better-search/
+plugins/advanced-custom-fields/
+plugins/advanced-custom-fields-pro/
+plugins/better-wp-security/
+plugins/classic-editor/
+plugins/code-snippets/
+plugins/cpt-admin-taxonomy-filtering/
+plugins/css3_tooltips/
+plugins/custom-css-js/
+plugins/custom-css-js-pro/
+plugins/custom-permalinks/
+plugins/custom-post-type-permalinks/
+plugins/custom-post-type-ui/
+plugins/duplicate-page/
+plugins/duracelltomi-google-tag-manager/
+plugins/ezyzip/
+plugins/formidable/
+plugins/formidable-views/
+plugins/google-site-kit/
+plugins/happyfiles-pro/
+plugins/patchstack/
+plugins/post-types-order/
+plugins/profile-order-manager/
+plugins/redirection/
+plugins/regenerate-thumbnails/
+plugins/seo-by-rank-math/
+plugins/waspthemes-yellow-pencil/
+plugins/wp-grid-builder/
+plugins/wp-grid-builder-bricks/
+plugins/wp-mail-smtp-pro/
+plugins/wp-test-email/
+
+# -------------------------------------------
+# Tredjeparts temaer (ikke endre)
+# -------------------------------------------
+themes/bricks/
+themes/twentytwentyfive/
+
+# -------------------------------------------
+# Uploads og media (brukerinnhold)
+# -------------------------------------------
+uploads/
+.tmb/
+
+# -------------------------------------------
+# Cache og temp-filer
+# -------------------------------------------
+cache/
+*.log
+*.tmp
+.DS_Store
+
+# -------------------------------------------
+# Sensitive filer
+# -------------------------------------------
+wp-config.php
+.htaccess
+*.sql
+*.sql.gz

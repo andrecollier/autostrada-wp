@@ -1,0 +1,1 @@
+(()=>{var a;(a=window.jQuery)(document).ready((function(){a('.swiper[data-autoconfig="true"]').each(((e,t)=>{const n=JSON.parse(a(t).attr("data-config"));new Swiper(t,n)}))}))})();

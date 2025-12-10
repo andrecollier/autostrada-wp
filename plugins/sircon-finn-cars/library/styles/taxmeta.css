@@ -1,0 +1,50 @@
+.sircon-taxmeta {
+	padding-top: 30px;
+}
+
+.sircon-taxmeta .formfield {
+	margin-bottom: 30px;
+}
+
+.sircon-taxmeta .formfield label {
+	width: 220px;
+	line-height: 27px;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 600;
+}
+
+.sircon-taxmeta .formfield input[type="text"],
+.sircon-taxmeta .formfield input[type="password"],
+.sircon-taxmeta .formfield select,
+.sircon-taxmeta .formfield textarea,
+.sircon-taxmeta .formfield .image-select-wrapper,
+.sircon-taxmeta .formfield .range-slider,
+.sircon-taxmeta .formfield .wp-picker-container {
+	max-width: calc(100% - 230px);
+	width: calc(100% - 260px);
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+
+.sircon-taxmeta-add .formfield {
+	margin: 10px 0;
+}
+
+.sircon-taxmeta-add .formfield label {
+	display: block;
+	width: 95%;
+}
+
+.sircon-taxmeta-add .formfield input[type="text"],
+.sircon-taxmeta-add .formfield input[type="password"],
+.sircon-taxmeta-add .formfield select,
+.sircon-taxmeta-add .formfield textarea,
+.sircon-taxmeta-add .formfield .image-select-wrapper,
+.sircon-taxmeta-add .formfield .range-slider,
+.sircon-taxmeta-add .formfield .wp-picker-container {
+	display: block;
+	width: 95%;
+	max-width: 95%;
+}

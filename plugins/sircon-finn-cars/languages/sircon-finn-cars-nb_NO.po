@@ -1,0 +1,359 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sircon-finn-cars\n"
+"POT-Creation-Date: 2020-09-11 12:59+0200\n"
+"PO-Revision-Date: 2020-09-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: Sircon Norge AS\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/optionspage.setup.php:8
+msgid "Finn cars"
+msgstr "Finn Biler"
+
+#: includes/optionspage.setup.php:9
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: includes/optionspage.setup.php:15
+msgid "Select page"
+msgstr "Velg side"
+
+#: includes/optionspage.setup.php:44
+msgid "Cache was cleared"
+msgstr "Cache ble fjernet"
+
+#: includes/optionspage.setup.php:44
+msgid "Clear Finn API Cache"
+msgstr "Fjern Finn API cache"
+
+#: includes/optionspage.setup.php:48
+msgid "API key"
+msgstr "API-nøkkel"
+
+#: includes/optionspage.setup.php:52 includes/optionspage.setup.php:364
+msgid "Org ID"
+msgstr "Org ID"
+
+#: includes/optionspage.setup.php:56
+msgid "Cars page ID"
+msgstr "Biler side ID"
+
+#: includes/optionspage.setup.php:57
+msgid "Used for the archive view, and as a base for single view permalinks"
+msgstr "Brukt til arkivvisning, og som en base for permalenker til enkeltvisning"
+
+#: includes/optionspage.setup.php:63
+msgid "Cache max age, in minutes"
+msgstr "Cache maks alder, i minutter"
+
+#: includes/optionspage.setup.php:67
+msgid "Archive fields"
+msgstr "Arkiv felter"
+
+#: includes/optionspage.setup.php:73
+msgid "Which data fields should be visible on the archive page?"
+msgstr "Hvilke data-felter skal være synlige på arkiv-siden?"
+
+#: includes/optionspage.setup.php:77
+msgid "Summary"
+msgstr "Sammendrag"
+
+#: includes/optionspage.setup.php:83 templates/archive.php:31
+msgid "Price"
+msgstr "Pris"
+
+#: includes/optionspage.setup.php:89 templates/archive.php:40
+#: templates/single.php:50
+msgid "Mileage"
+msgstr "Km.stand"
+
+#: includes/optionspage.setup.php:95
+msgid "Engine effect"
+msgstr "Motoreffekt"
+
+#: includes/optionspage.setup.php:101
+msgid "Engine fuel"
+msgstr "Drivstoff"
+
+#: includes/optionspage.setup.php:107
+msgid "City"
+msgstr "By"
+
+#: includes/optionspage.setup.php:113 templates/archive.php:96
+#: templates/filter.php:19
+msgid "Dealer"
+msgstr "Forhandler"
+
+#: includes/optionspage.setup.php:119
+msgid "Last updated date"
+msgstr "Sist oppdatert dato"
+
+#: includes/optionspage.setup.php:124
+msgid "Filters"
+msgstr "Filter"
+
+#: includes/optionspage.setup.php:130
+msgid "Which filters should be visible on the archive page?"
+msgstr "Hvilke filter skal være synlige på arkiv-siden?"
+
+#: includes/optionspage.setup.php:137 includes/optionspage.setup.php:146
+#: includes/optionspage.setup.php:155 includes/optionspage.setup.php:164
+#: includes/optionspage.setup.php:173 includes/optionspage.setup.php:182
+#: includes/optionspage.setup.php:191 includes/optionspage.setup.php:200
+#: includes/optionspage.setup.php:209 includes/optionspage.setup.php:218
+#: includes/optionspage.setup.php:227 includes/optionspage.setup.php:236
+#: includes/optionspage.setup.php:245 includes/optionspage.setup.php:254
+#: includes/optionspage.setup.php:263 includes/optionspage.setup.php:272
+#: includes/optionspage.setup.php:281 includes/optionspage.setup.php:290
+#: includes/optionspage.setup.php:299 includes/optionspage.setup.php:308
+#: includes/optionspage.setup.php:317 includes/optionspage.setup.php:326
+#: includes/optionspage.setup.php:335 includes/optionspage.setup.php:344
+msgid "Show filter"
+msgstr "Vis filter"
+
+#: includes/optionspage.setup.php:138 includes/optionspage.setup.php:147
+#: includes/optionspage.setup.php:156 includes/optionspage.setup.php:165
+#: includes/optionspage.setup.php:174 includes/optionspage.setup.php:183
+#: includes/optionspage.setup.php:192 includes/optionspage.setup.php:201
+#: includes/optionspage.setup.php:210 includes/optionspage.setup.php:219
+#: includes/optionspage.setup.php:228 includes/optionspage.setup.php:237
+#: includes/optionspage.setup.php:246 includes/optionspage.setup.php:255
+#: includes/optionspage.setup.php:264 includes/optionspage.setup.php:273
+#: includes/optionspage.setup.php:282 includes/optionspage.setup.php:291
+#: includes/optionspage.setup.php:300 includes/optionspage.setup.php:309
+#: includes/optionspage.setup.php:318 includes/optionspage.setup.php:327
+#: includes/optionspage.setup.php:336 includes/optionspage.setup.php:345
+msgid "Hide filter"
+msgstr "Skjul filter"
+
+#: includes/optionspage.setup.php:349
+msgid "Dealers"
+msgstr "Forhandlere"
+
+#: includes/optionspage.setup.php:355
+msgid "Enables dealership filtering"
+msgstr "Aktiverer forhandlerfilter"
+
+#: includes/optionspage.setup.php:360
+msgid "Add new dealer"
+msgstr "Legg til ny forhandler"
+
+#: includes/optionspage.setup.php:368
+msgid "Name"
+msgstr "Navn"
+
+#: library/classes/formelements.class.php:124
+msgid "Enable"
+msgstr "Aktiver"
+
+#: library/classes/formelements.class.php:346
+msgid "Select/upload image"
+msgstr "Velg/Last opp bilde"
+
+#: library/classes/formelements.class.php:347
+#: library/classes/formelements.class.php:364
+msgid "Remove"
+msgstr "Fjern"
+
+#: library/classes/formelements.class.php:363
+msgid "Select/upload file"
+msgstr "Velg/Last opp fil"
+
+#: library/classes/formelements.class.php:421
+msgid "Add row"
+msgstr "Legg til rekke"
+
+#: library/classes/formelements.class.php:478
+msgid "Save Changes"
+msgstr "Lagre endringer"
+
+#: library/classes/formelements.class.php:526
+msgid "Select image"
+msgstr "Velg bilde"
+
+#: library/classes/formelements.class.php:535
+msgid "Select file"
+msgstr "Velg fil"
+
+#: library/classes/options.class.php:53
+msgid "Main"
+msgstr "Hoved"
+
+#: library/classes/postdata.class.php:41
+msgid "Custom Fields"
+msgstr "Skreddersydde felter"
+
+#: library/classes/userdata.class.php:40
+msgid "Extra fields"
+msgstr "Ekstra felter"
+
+#: templates/archive.php:21 templates/single.php:22
+msgid "Sold"
+msgstr "Solgt"
+
+#: templates/archive.php:54 templates/single.php:86
+msgid "Effect"
+msgstr "Effekt"
+
+#: templates/archive.php:58
+msgid "hp"
+msgstr "hk"
+
+#: templates/archive.php:68 templates/single.php:80
+msgid "Fuel"
+msgstr "Drivstoff"
+
+#: templates/archive.php:82
+msgid "Location"
+msgstr "Lokasjon"
+
+#: templates/archive.php:109
+msgid "Last updated"
+msgstr "Sist oppdatert"
+
+#: templates/filter.php:8
+msgid "Show/Hide filters"
+msgstr "Vis/Skjul filtre"
+
+#: templates/single.php:30
+msgid "Full price:"
+msgstr "Full pris:"
+
+#: templates/single.php:34
+msgid "Details"
+msgstr "Detaljer"
+
+#: templates/single.php:38
+msgid "Year"
+msgstr "År"
+
+#: templates/single.php:44
+msgid "First registration"
+msgstr "Førstegangsregistrert"
+
+#: templates/single.php:56
+msgid "Exterior color"
+msgstr "Eksteriørfarge"
+
+#: templates/single.php:62
+msgid "Interior color"
+msgstr "Interiørfarge"
+
+#: templates/single.php:68
+msgid "Transmission"
+msgstr "Girkasse"
+
+#: templates/single.php:74
+msgid "Wheel drive"
+msgstr "Hjuldrift"
+
+#: templates/single.php:92
+msgid "Cylinder volume"
+msgstr "Sylindervolum"
+
+#: templates/single.php:98
+msgid "Weight"
+msgstr "Vekt"
+
+#: templates/single.php:104
+msgid "CO2 emissions"
+msgstr "CO2-utslipp"
+
+#: templates/single.php:110
+msgid "Seats"
+msgstr "Seter"
+
+#: templates/single.php:116
+msgid "Body type"
+msgstr "Karosseri"
+
+#: templates/single.php:122
+msgid "Doors"
+msgstr "Dører"
+
+#: templates/single.php:128
+msgid "Trunk size"
+msgstr "Bagasjerom"
+
+#: templates/single.php:134
+msgid "Car location"
+msgstr "Bil lokasjon"
+
+#: templates/single.php:140
+msgid "Sales form"
+msgstr "Salgsform"
+
+#: templates/single.php:146
+msgid "Tax class"
+msgstr "Avgiftsklasse"
+
+#: templates/single.php:155
+msgid "Equipment"
+msgstr "Utstyr"
+
+#: templates/single.php:166
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: templates/single.php:170
+msgid "FINN-code"
+msgstr "FINN-kode"
+
+#: templates/single.php:173
+msgid "Reference"
+msgstr "Referanse"
+
+#~ msgid "Registration class"
+#~ msgstr "Registreringsklasse"
+
+#~ msgid "Updated"
+#~ msgstr "Oppdatert"
+
+#~ msgid "Show updated date in archive view"
+#~ msgstr "Vis oppdatert dato i arkivvisning"
+
+#~ msgid "Show city in archive view"
+#~ msgstr "Vis by i arkivvisning"
+
+#~ msgid "Show engine effect in archive view"
+#~ msgstr "Vis motoreffekt i arkivvisning"
+
+#~ msgid "Show engine fuel in archive view"
+#~ msgstr "Vis drivstoff i arkivvisning"
+
+#~ msgid "Show mileage in archive view"
+#~ msgstr "Vis kilometerstand i arkivvisning"
+
+#~ msgid "Price main"
+#~ msgstr "Pris"
+
+#~ msgid "Show main price in archive view"
+#~ msgstr "Vis pris i arkivvisning"
+
+#~ msgid "Show demo content"
+#~ msgstr "Vis demoinnhold"
+
+#~ msgid "Demo content will be shown anyway without a valid license"
+#~ msgstr "Demoinnhold vises uansett uten en gyldig lisens"
+
+#~ msgid "Ad types"
+#~ msgstr "Annonsetyper"
+
+#~ msgid "Include \"Cars in norway\""
+#~ msgstr "Inkluder \"Biler i norge\""
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Nei"

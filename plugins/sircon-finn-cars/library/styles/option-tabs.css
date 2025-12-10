@@ -1,0 +1,43 @@
+.sircon-option-tabs {
+	position:relative;
+}
+
+.sircon-option-tabs fieldset {
+	float:left;
+}
+
+.sircon-option-tabs legend {
+	display:block;
+	padding:10px 25px;
+	background:#ccc;
+	border:1px solid #aaa;
+	border-bottom:none;
+	border-radius:4px 4px 0 0;
+	margin-right:4px;
+	cursor:pointer;
+}
+
+.sircon-option-tabs legend:hover {
+	background:#eee;
+}
+
+.sircon-option-tabs .current-fieldset legend {
+	background:#fff;
+	position:relative;
+	top:1px;
+	z-index:999
+}
+
+.sircon-option-tabs .fieldset-content {
+	display:none;
+	position:absolute;
+	left:0;
+	min-width:300px;
+	width:80vw;
+	border:1px solid #aaa;
+	padding:10px;
+	background:#fff;
+}
+.sircon-option-tabs .current-fieldset .fieldset-content {
+	display:block;
+}

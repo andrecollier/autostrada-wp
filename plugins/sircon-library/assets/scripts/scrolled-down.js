@@ -1,0 +1,1 @@
+(()=>{var o;(o=window.jQuery)(document).ready((function(){o(window).scrollTop()>0?o("body").addClass("scrolled-down"):o("body").removeClass("scrolled-down")})),o(window).scroll((function(){o(window).scrollTop()>0?o("body").addClass("scrolled-down"):o("body").removeClass("scrolled-down")}))})();

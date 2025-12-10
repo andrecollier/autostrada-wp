@@ -1,0 +1,1 @@
+!function(e,n){e.addClassWhenVisible=function(e,s="visible"){const t=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&(n(e.target).addClass(s),t.unobserve(e.target))}))}));n(e).each(((e,n)=>{t.observe(n)}))}}(window,jQuery);

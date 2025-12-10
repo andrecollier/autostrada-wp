@@ -1,0 +1,77 @@
+/*
+	*
+	* TABS
+	*
+*/
+	.sircon-tabs-wrapper{
+		margin-bottom:20px;
+	}
+
+	.sircon-tabs-wrapper,
+	.sircon-tabs-wrapper .tab-titles,
+	.sircon-tabs-wrapper .them-tabs{position:relative;}
+
+	/* titles */
+	.tab-titles{
+		margin:0;
+	}
+
+
+	.sircon-tab-title{
+		display:inline-block;
+		margin-right:5px;
+		margin-bottom:4px;
+		background:#ccc;
+		color:#444;
+		padding:10px 20px;
+		cursor:pointer;
+		transition: background 0.2s;
+	}
+
+	@media(min-width:780px){
+		.tab-titles .sircon-tab-title{
+			margin-bottom:0;
+		}
+	}
+	.tab-titles .sircon-tab-title:hover,
+	.tab-titles .sircon-tab-title.current{
+		background-color:#FFF;
+		color:#222;
+		text-decoration:none;
+	}
+
+
+
+	/* tab contents */
+
+	.them-tabs .sircon-tab{
+		padding:5px;
+		background:#FFF;
+		border-top-width:5px;
+	}
+		.them-tabs .sircon-tab:after,
+		.them-tabs .sircon-tab:before{clear:both;content:"";display:table;}
+
+	.them-tabs .sircon-tab{
+		box-sizing: border-box;
+		pointer-events:none;
+		opacity:0;
+		transition:opacity 0.2s;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		z-index:0;
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	.them-tabs .sircon-tab.current{
+		pointer-events:auto;
+		position:relative;
+		opacity:1;
+		z-index:10;
+		height: auto;
+		width: 100%;
+		overflow: visible;
+	}
