@@ -17,6 +17,9 @@ Alle vesentlige endringer dokumenteres her.
 - Polestar-siden (/polestar) krasjet på iPhone - komprimert mobil-bakgrunnsbilde fra 6.6MB til 247KB
 - EX60 button fix-snippet begrenset til kun EX60-siden (kjørte før på alle sider)
 - Fjernet duplikat fixButton-script fra Bricks Global Settings
+- Tønsberg popup-tittel endret fra "XPENG" til "Tønsberg"
+- Porsgrunn lørdag åpningstid endret fra 10-14 til 11-14 (snippet + popup)
+- XPENG popup fungerte ikke - fjernet feil targetSelector fra interaction
 
 ---
 
