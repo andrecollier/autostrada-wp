@@ -24,7 +24,8 @@
 
 | Dato | Timer | Avdeling | Type | Beskrivelse | Status |
 |------|-------|----------|------|-------------|--------|
-| 2024-12-10 | 1.0 | Bil AS (100004) | Oppsett | CLI workflow, SSH, Git | Ufakturert |
+| 2025-12-10 | 1.0 | Bil AS (100004) | Oppsett | CLI workflow, SSH, Git | Ufakturert |
+| 2025-12-10 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks åpningstider - shortcode bug, opprettet popup-template, koblet til side | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -44,10 +45,10 @@
 | Autostrada Notodden AS | 100013 | 0 |
 | Autostrada Porsgrunn AS | 100009 | 0 |
 | Autostrada Seljord AS | 100007 | 0 |
-| Autostrada Tønsberg AS | 100016 | 0 |
+| Autostrada Tønsberg AS | 100016 | 0.5 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 1.0 timer**
+**Totalt ufakturert: 1.5 timer**
 
 ---
 
