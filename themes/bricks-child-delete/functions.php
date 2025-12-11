@@ -198,3 +198,123 @@ function render_custom_field_email_block() {
 		esc_html( $email )
 	);
 }
+
+/**
+ * Meld din interesse-knapp for bil-sider
+ * Henter URL fra ACF-felt og viser knapp på frontend
+ */
+add_action( 'wp_footer', function() {
+	// Kun på bil post type
+	if ( ! is_singular( 'bil' ) ) {
+		return;
+	}
+
+	$interesse_url = get_field( 'meld_din_interesse_url:' );
+
+	// Hvis feltet er tomt, ikke vis noe
+	if ( empty( $interesse_url ) ) {
+		return;
+	}
+
+	$interesse_url = esc_url( $interesse_url );
+	?>
+	<style>
+	.meld-din-interesse-knapp {
+		display: inline-flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		padding: 10px 20px !important;
+		font-size: 13px !important;
+		font-weight: 600 !important;
+		border-radius: 12px !important;
+		margin-top: 10px !important;
+		background: #cb0d2a !important;
+		border: 1.5px solid #cb0d2a !important;
+		color: #fff !important;
+		text-decoration: none !important;
+		transition: all 0.3s ease !important;
+		font-family: inherit !important;
+		cursor: pointer !important;
+		width: auto !important;
+		box-sizing: border-box !important;
+		align-self: stretch !important;
+		min-height: 40px !important;
+		line-height: 1.2 !important;
+	}
+	.meld-din-interesse-knapp:hover {
+		opacity: 0.9 !important;
+		text-decoration: none !important;
+		color: #fff !important;
+		border: 1.5px solid #000 !important;
+		background: #000 !important;
+	}
+	@media (max-width: 478px) {
+		.meld-din-interesse-knapp {
+			width: 100% !important;
+			height: 50px !important;
+		}
+	}
+	</style>
+	<script>
+	(function() {
+		var interesseUrl = <?php echo json_encode( $interesse_url ); ?>;
+
+		function addMeldDinInteresseButton() {
+			// Prøv først spesifikk container ID
+			var container = document.querySelector("#brxe-dsadfq");
+
+			// Fallback: finn container ved å lete etter Kontakt-knapper
+			if (!container) {
+				var buttons = document.querySelectorAll('a');
+				for (var i = 0; i < buttons.length; i++) {
+					if (buttons[i].textContent.includes('Kontakt Kongsberg') ||
+						buttons[i].textContent.includes('Kontakt Notodden') ||
+						buttons[i].textContent.includes('Kontakt Seljord')) {
+						container = buttons[i].closest('div');
+						break;
+					}
+				}
+			}
+
+			// Fallback: finn Bestill prøvekjøring-knappen
+			if (!container) {
+				var buttons = document.querySelectorAll('a');
+				for (var i = 0; i < buttons.length; i++) {
+					if (buttons[i].textContent.includes('Bestill prøvekjøring')) {
+						container = buttons[i].closest('div');
+						break;
+					}
+				}
+			}
+
+			if (!container) {
+				console.log('Meld din interesse: Container ikke funnet');
+				return false;
+			}
+
+			// Sjekk om knappen allerede eksisterer
+			if (container.querySelector(".meld-din-interesse-knapp")) {
+				return true;
+			}
+
+			// Opprett knappen
+			var link = document.createElement("a");
+			link.href = interesseUrl;
+			link.target = "_blank";
+			link.rel = "noopener";
+			link.className = "meld-din-interesse-knapp";
+			link.textContent = "Meld din interesse";
+
+			container.appendChild(link);
+			console.log('Meld din interesse-knapp lagt til');
+			return true;
+		}
+
+		// Kjør ved DOMContentLoaded og med forsinkelse for å håndtere Bricks lazy loading
+		document.addEventListener("DOMContentLoaded", addMeldDinInteresseButton);
+		setTimeout(addMeldDinInteresseButton, 1000);
+		setTimeout(addMeldDinInteresseButton, 3000);
+	})();
+	</script>
+	<?php
+}, 100 );
