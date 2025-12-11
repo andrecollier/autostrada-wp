@@ -240,6 +240,9 @@ add_action( 'wp_footer', function() {
 		align-self: stretch !important;
 		min-height: 40px !important;
 		line-height: 1.2 !important;
+		pointer-events: auto !important;
+		position: relative !important;
+		z-index: 10 !important;
 	}
 	.meld-din-interesse-knapp:hover {
 		opacity: 0.9 !important;
@@ -253,6 +256,10 @@ add_action( 'wp_footer', function() {
 			width: 100% !important;
 			height: 50px !important;
 		}
+	}
+	/* Fix for Bricks z-index issue on bil pages */
+	#brxe-yohmim {
+		z-index: 1 !important;
 	}
 	</style>
 	<script>
@@ -304,6 +311,12 @@ add_action( 'wp_footer', function() {
 			link.rel = "noopener";
 			link.className = "meld-din-interesse-knapp";
 			link.textContent = "Meld din interesse";
+			link.style.pointerEvents = "auto";
+			link.onclick = function(e) {
+				e.stopPropagation();
+				window.open(interesseUrl, '_blank');
+				return false;
+			};
 
 			container.appendChild(link);
 			console.log('Meld din interesse-knapp lagt til');
