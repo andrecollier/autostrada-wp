@@ -11,10 +11,10 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 
 
 
-<?php /* ?> 		
+<?php /* ?>
 <div class="finn_postsfilters_head">
 	<div class="finn_postsfilters_head_label">
-		<h3>L&#229;nekalkulator</h3>				    
+		<h3>L&#229;nekalkulator</h3>
 	</div>
 	<div class="finn_postsfilters_head_slide_one">
 		<div class="gb_rangeslider_new_container">
@@ -30,14 +30,14 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 		</div>
 	</div>
 </div>
-<?php */ ?> 
+<?php */ ?>
 
 <div class="sfc-item-wrapper">
 	<div class="sfc-items">
 		<?php foreach ($result->entry as $ad) {
 
 			$item = Finn::parseSingleArchive($ad);
-			
+
 			$finn_id = $item['id'];
 			$Finn = new Finn();
 			$ad = simplexml_load_string($Finn->getSingle($finn_id));
@@ -47,15 +47,29 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 			if( $single_item_images !== NULL){
 				$single_item_images_length = count($single_item_images) - 1;
 			}
-			
+
+			// Sjekk om dette er Porsche Center Porsgrunn
+			$isPorscheCenter = false;
+			if (isset($single_item['contact']['name'])) {
+				$dealerName = strtolower($single_item['contact']['name']);
+				if (stripos($dealerName, 'porsche') !== false && stripos($dealerName, 'center') !== false) {
+					$isPorscheCenter = true;
+				}
+			}
 
 			if($single_item_images_length < 0){
-    			 $selected_image = $item['image'];
+   			 $selected_image = $item['image'];
 			}else{
-			    $selected_image = $single_item_images[$single_item_images_length];
-    			$selected_image = $selected_image['url'];
+				// For Porsche Center: bruk første bilde (som FINN.no)
+				// For andre: bruk siste bilde (eksisterende logikk)
+				if ($isPorscheCenter) {
+					$selected_image = $single_item_images[0];
+				} else {
+					$selected_image = $single_item_images[$single_item_images_length];
+				}
+   			$selected_image = $selected_image['url'];
 			}
-			
+
 // 			var_dump($selected_image);
 			?>
 
@@ -85,17 +99,17 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 						if( array_key_exists('year',$item) ){
 							?>
 							<div class="sfc-info-wrapper">
-		
+
 								<div class="sfc-info-label">
 									<?php _e('&#197;rsmodell', 'sircon-finn-cars'); ?>
 								</div>
-		
+
 								<div class="sfc-info-value">
 									<?= $item['year']; ?>
 								</div>
-		
+
 							</div>
-							
+
 							<?php
 						}
 					if (Options::get_option(FinnCars::OPTIONSPAGE_ID, 'mileage_show_in_archive') == 'yes') { ?>
@@ -104,7 +118,7 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 							<div class="sfc-info-label">
 								<?php _e('Kilometer', 'sircon-finn-cars'); ?>
 							</div>
-	
+
 							<div class="sfc-info-value">
 								<?= number_format($item['mileage'], 0, ',', ' ') . ' km'; ?>
 							</div>
@@ -122,7 +136,7 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 						</div>
 
 					</div>
-					
+
 					<div class="sfc-info-wrapper">
 
 						<div class="sfc-info-label">
@@ -130,11 +144,11 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 						</div>
 
 						<div class="sfc-info-value card_sfc_monthly_price">
-							
+
 						</div>
 
 					</div>
-					
+
 					<?php if (Options::get_option(FinnCars::OPTIONSPAGE_ID, 'engine_effect_show_in_archive') == 'y') {
 						if (isset($item['engine_effect'])) { ?>
 							<div class="sfc-info-wrapper">
@@ -173,7 +187,7 @@ $cars_page_id = intval(Options::get_option(FinnCars::OPTIONSPAGE_ID, 'cars_page_
 							<div class="sfc-info-label">
 								<?php _e('Location', 'sircon-finn-cars'); ?>
 							</div>
-	
+
 							<div class="sfc-info-value">
 								<?= $item['city']; ?>
 							</div>
