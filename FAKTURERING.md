@@ -31,6 +31,7 @@
 | 2025-12-10 | 0.5 | Bil AS (100004) | Bugfix | Div småfikser: Tønsberg popup-tittel, Porsgrunn lørdag 11-14, XPENG popup targetSelector | Ufakturert |
 | 2025-12-11 | 0.5 | Bil AS (100004) | Utvikling | Meld din interesse-knapp for bil-sider - dynamisk knapp basert på ACF-felt, fungerer på alle bil-sider | Ufakturert |
 | 2025-12-20 | 3.0 | Bil AS (100004) | Utvikling | Porsche Center Porsgrunn - endret bilderekkefølge for fremhevet bilde til samme som FINN.no (første bilde i stedet for siste) på både arkivside og bilsider | Ufakturert |
+| 2026-01-05 | 0.5 | Porsgrunn AS (100009) | Bugfix | Porsgrunn åpningstider tooltip (ID 10198) viste gammel lørdag-tid (10:00-14:00), feilsøkt og oppdatert til 11:00-14:00 | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -48,13 +49,13 @@
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 0 |
 | Autostrada Notodden AS | 100013 | 0 |
-| Autostrada Porsgrunn AS | 100009 | 0 |
+| Autostrada Porsgrunn AS | 100009 | 0.5 |
 | Polestar Porsgrunn AS | TBD | 0.5 |
 | Autostrada Seljord AS | 100007 | 0 |
 | Autostrada Tønsberg AS | 100016 | 0.5 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 5.5 timer**
+**Totalt ufakturert: 6.0 timer**
 
 ---
 

@@ -19,6 +19,7 @@ Alle vesentlige endringer dokumenteres her.
 - Fjernet duplikat fixButton-script fra Bricks Global Settings
 - Tønsberg popup-tittel endret fra "XPENG" til "Tønsberg"
 - Porsgrunn lørdag åpningstid endret fra 10-14 til 11-14 (snippet + popup)
+- **2026-01-05**: Porsgrunn tooltip (ID 10198) viste fortsatt gammel lørdag-tid (10:00-14:00), oppdatert til 11:00-14:00
 - XPENG popup fungerte ikke - fjernet feil targetSelector fra interaction
 
 ---
