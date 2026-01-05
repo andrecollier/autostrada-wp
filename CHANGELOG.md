@@ -12,6 +12,12 @@ Alle vesentlige endringer dokumenteres her.
 - Ny avdelingsside: Polestar Porsgrunn (ID 30225, kladd)
 - Åpningstider-snippet for Polestar Porsgrunn (ID 41)
 - Åpningstider popup-template for Polestar Porsgrunn (ID 30226)
+- **2026-01-05**: Test-parameter (?test_day) i åpningstider snippet ID 7 for testing av ulike dager
+
+### Changed
+- **2026-01-05**: Oppdatert Rank Math SEO 1.0.260 → 1.0.261
+- **2026-01-05**: Oppdatert Redirection 5.5.2 → 5.6.0
+- **Pending**: WordPress 6.8.3 → 6.9 (major update, venter med oppdatering)
 
 ### Fixed
 - Polestar-siden (/polestar) krasjet på iPhone - komprimert mobil-bakgrunnsbilde fra 6.6MB til 247KB
