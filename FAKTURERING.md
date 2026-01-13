@@ -32,6 +32,7 @@
 | 2025-12-11 | 0.5 | Bil AS (100004) | Utvikling | Meld din interesse-knapp for bil-sider - dynamisk knapp basert på ACF-felt, fungerer på alle bil-sider | Ufakturert |
 | 2025-12-20 | 3.0 | Bil AS (100004) | Utvikling | Porsche Center Porsgrunn - endret bilderekkefølge for fremhevet bilde til samme som FINN.no (første bilde i stedet for siste) på både arkivside og bilsider | Ufakturert |
 | 2026-01-05 | 0.5 | Porsgrunn AS (100009) | Bugfix | Porsgrunn åpningstider viste feil lørdag-tid - feilsøkt og fjernet gammel kode, lagt til test-parameter (?test_day) i snippet 7 for enklere testing | Ufakturert |
+| 2026-01-13 | 1.0 | Kongsberg AS (100006) | Utvikling | Peugeot forhandler Kongsberg DEL 1 - ny Bricks template car-single-peugeot (ID 30612), kontaktknapper Notodden+Kongsberg, fjernet Peugeot fra original template | Pause |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -47,7 +48,7 @@
 |----------|----------|------------------|
 | Autostrada Bil AS | 100004 | 4.5 |
 | Autostrada Arendal AS | 100008 | 0 |
-| Autostrada Kongsberg AS | 100006 | 0 |
+| Autostrada Kongsberg AS | 100006 | 1.0 |
 | Autostrada Notodden AS | 100013 | 0 |
 | Autostrada Porsgrunn AS | 100009 | 0.5 |
 | Polestar Porsgrunn AS | TBD | 0.5 |
@@ -55,7 +56,7 @@
 | Autostrada Tønsberg AS | 100016 | 0.5 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 6.0 timer**
+**Totalt ufakturert: 7.0 timer**
 
 ---
 
