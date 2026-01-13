@@ -30,10 +30,26 @@ Konfigurert i `plugins/sircon-finn-cars/includes/optionspage.setup.php`:
 - **Plugin:** Formidable Forms (hovedsystem for prøvekjøring)
 - **Loopify:** Brukes for nyhetsbrev, ikke prøvekjøring
 
+#### To typer prøvekjøring-sider:
+
+**1. Merkespesifikke landingssider (egne skjemaer per merke):**
+| URL | Form ID | Merke |
+|-----|---------|-------|
+| `/om-autostrada/kontakt/bestill-provekjoring-peugeot/` | 32 | Peugeot |
+| `/om-autostrada/kontakt/bestill-provekjoring-volvo/` | 9 | Volvo |
+| `/om-autostrada/kontakt/bestill-provekjoring-xpeng/` | 41 | XPENG |
+| `/om-autostrada/kontakt/bestill-provekjoring-kia/` | 44 | Kia |
+| `/om-autostrada/kontakt/bestill-provekjoring-mercedes/` | 42 | Mercedes |
+
+**2. Felles prøvekjøring-side (alle merker og avdelinger):**
+| URL | Beskrivelse |
+|-----|-------------|
+| `/provekjoring/` | Felles landingsside med skjema for alle merker og avdelinger |
+
 #### Formidable Forms per merke:
 | Form ID | Navn | E-post actions |
 |---------|------|----------------|
-| 32 | Bestill prøvekjøring Peugeot | Notodden (rune.johansen@autostrada.com) |
+| 32 | Bestill prøvekjøring Peugeot | Notodden (rune.johansen@autostrada.com), Kongsberg (thomas@autostrada.com - NY!) |
 | 9 | Bestill prøvekjøring Volvo | - |
 | 41 | Bestill prøvekjøring XPENG | - |
 | 44 | Bestill prøvekjøring KIA | - |
