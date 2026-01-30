@@ -34,6 +34,7 @@
 | 2026-01-05 | 0.5 | Porsgrunn AS (100009) | Bugfix | Porsgrunn åpningstider viste feil lørdag-tid - feilsøkt og fjernet gammel kode, lagt til test-parameter (?test_day) i snippet 7 for enklere testing | Ufakturert |
 | 2026-01-13 | 2.0 | Kongsberg AS (100006) | Utvikling | Peugeot forhandler Kongsberg - ny Bricks template car-single-peugeot (ID 30612) med kontaktknapper Notodden+Kongsberg, Formidable Forms avdelingsvalg i prøvekjøring-skjema (form 32+47), email routing til thomas@autostrada.com | Ufakturert |
 | 2026-01-27 | 0.5 | Kongsberg AS (100006) | Bugfix | Fiks prøvekjøring e-post action (ID 30616) - feil conditional logic format og manglende bilmerke-betingelse førte til at Thomas fikk XPENG-forespørsler med Peugeot-emne | Ufakturert |
+| 2026-01-30 | 0.5 | Bil AS (100004) | Bugfix | Byttet om Bricks-innhold og post_content mellom Arendal (30796) og Seljord (30575) artiklene - innholdet var plassert på feil post, re-serialisert Bricks-data, flushet cache | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -47,7 +48,7 @@
 
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 4.5 |
+| Autostrada Bil AS | 100004 | 5.0 |
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0 |
@@ -57,7 +58,7 @@
 | Autostrada Tønsberg AS | 100016 | 0.5 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 8.5 timer**
+**Totalt ufakturert: 9.0 timer**
 
 ---
 
