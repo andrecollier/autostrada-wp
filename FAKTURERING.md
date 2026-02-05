@@ -37,6 +37,7 @@
 | 2026-01-30 | 0.5 | Bil AS (100004) | Bugfix | Byttet om Bricks-innhold og post_content mellom Arendal (30796) og Seljord (30575) artiklene - innholdet var plassert på feil post, re-serialisert Bricks-data, flushet cache | Ufakturert |
 | 2026-02-03 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks XPENG prøvekjøring e-postrouting (Form 47) - Tønsberg var lagret som "other" i database (bug), la til som vanlig option, oppdatert email action (ID 28586) condition og e-post til tonsberg@autostrada.com, skjult tom radio-knapp med CSS | Ufakturert |
 | 2026-02-04 | 0.5 | Bil AS (100004) | Oppsett | Testside for ny VCRS Servicebooking-modul (side 30854) - opprettet draft-side via WP-CLI, lagt inn script og custom element, publisert med noindex, 100vh sentrert container | Ufakturert |
+| 2026-02-05 | 0.25 | Porsgrunn AS (100009) | Oppsett | Testside for VCRS vindusreparasjon-modul (side 30857) - windowrepair booking widget, publisert med noindex | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -54,13 +55,13 @@
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0 |
-| Autostrada Porsgrunn AS | 100009 | 0.5 |
+| Autostrada Porsgrunn AS | 100009 | 0.75 |
 | Polestar Porsgrunn AS | TBD | 0.5 |
 | Autostrada Seljord AS | 100007 | 0 |
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 10.0 timer**
+**Totalt ufakturert: 10.25 timer**
 
 ---
 
