@@ -40,6 +40,7 @@
 | 2026-02-05 | 0.25 | Porsgrunn AS (100009) | Oppsett | Testside for VCRS vindusreparasjon-modul (side 30857) - windowrepair booking widget, publisert med noindex | Ufakturert |
 | 2026-02-06 | 0.5 | Bil AS (100004) | Oppsett | BCC Andreas.Fahre@autostrada.com på alle XPENG-skjemaer - Form 41 (3 aksjoner) og Form 47 (3 aksjoner), totalt 6 e-postaksjoner oppdatert | Ufakturert |
 | 2026-02-12 | 0.25 | Bil AS (100004) | Oppsett | Testside for VCRS Ecom Retailer Booking (side 30973) - alle tjenester (carcare, windscreenchiprepair, windowreplace, service, carrepair, pkk, wheelshift), publisert med noindex | Ufakturert |
+| 2026-02-13 | 0.5 | Bil AS (100004) | Bugfix | Volvo ES90 prøvekjøringsknapp skjult av YellowPencil CSS - fjernet display:none fra _wt_css postmeta (post 26296) og custom-264.css, knapp lenker til /bestill-provekjoring-volvo/ | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -53,7 +54,7 @@
 
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 6.25 |
+| Autostrada Bil AS | 100004 | 6.75 |
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0 |
@@ -63,7 +64,7 @@
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 11.0 timer**
+**Totalt ufakturert: 11.5 timer**
 
 ---
 
