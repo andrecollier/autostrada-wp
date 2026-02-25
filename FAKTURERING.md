@@ -42,6 +42,7 @@
 | 2026-02-12 | 0.25 | Bil AS (100004) | Oppsett | Testside for VCRS Ecom Retailer Booking (side 30973) - alle tjenester (carcare, windscreenchiprepair, windowreplace, service, carrepair, pkk, wheelshift), publisert med noindex | Ufakturert |
 | 2026-02-13 | 0.5 | Bil AS (100004) | Bugfix | Volvo ES90 prøvekjøringsknapp skjult av YellowPencil CSS - fjernet display:none fra _wt_css postmeta (post 26296) og custom-264.css, knapp lenker til /bestill-provekjoring-volvo/ | Ufakturert |
 | 2026-02-17 | 0.5 | Bil AS (100004) | Bugfix | Fiks Volvo prøvekjøring i skjema 47 - XPENG-modell felt (710) var korrupt, fikset serialized data, lagt til JavaScript på /provekjoring/ som sender Volvo-kunder direkte til volvocars.com basert på valgt avdeling (Porsgrunn/Arendal) | Ufakturert |
+| 2026-02-25 | 0.25 | Notodden AS (100013) | Bugfix | Fiks Profile Order Manager - nye ansatte (f.eks. Jostein) ble ikke vist i sorteringslisten, endret logikk til å hente alle ansatte og legge nye på slutten | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -58,14 +59,14 @@
 | Autostrada Bil AS | 100004 | 7.25 |
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
-| Autostrada Notodden AS | 100013 | 0 |
+| Autostrada Notodden AS | 100013 | 0.25 |
 | Autostrada Porsgrunn AS | 100009 | 0.75 |
 | Polestar Porsgrunn AS | TBD | 0.5 |
 | Autostrada Seljord AS | 100007 | 0 |
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 12.0 timer**
+**Totalt ufakturert: 12.25 timer**
 
 ---
 
