@@ -44,6 +44,7 @@
 | 2026-02-17 | 0.5 | Bil AS (100004) | Bugfix | Fiks Volvo prøvekjøring i skjema 47 - XPENG-modell felt (710) var korrupt, fikset serialized data, lagt til JavaScript på /provekjoring/ som sender Volvo-kunder direkte til volvocars.com basert på valgt avdeling (Porsgrunn/Arendal) | Ufakturert |
 | 2026-02-25 | 0.25 | Notodden AS (100013) | Bugfix | Fiks Profile Order Manager - nye ansatte (f.eks. Jostein) ble ikke vist i sorteringslisten, endret logikk til å hente alle ansatte og legge nye på slutten | Ufakturert |
 | 2026-02-27 | 1.0 | Bil AS (100004) | Bugfix | Fiks Google EU Consent Policy-advarsel: Cookie Information-script flyttet til topp av head (FØR GTM/GA4), fjernet duplikat GTM-script, deaktivert Site Kit GA4 frontend snippet (GA4 via GTM), lagt til Google Business Data Responsibility-lenke i begge personvernerklæringer | Ufakturert |
+| 2026-03-02 | 0.5 | Porsgrunn AS (100009) | Utvikling | Ny Tacdis ecom-retailer-booking på Porsgrunn servicebooking-side - ny shortcode i tacdis-ecom plugin, erstattet gammel servicebooking med ny web component | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -61,13 +62,13 @@
 | Autostrada Arendal AS | 100008 | 0 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0.25 |
-| Autostrada Porsgrunn AS | 100009 | 0.75 |
+| Autostrada Porsgrunn AS | 100009 | 1.25 |
 | Polestar Porsgrunn AS | TBD | 0.5 |
 | Autostrada Seljord AS | 100007 | 0 |
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 13.25 timer**
+**Totalt ufakturert: 13.75 timer**
 
 ---
 
