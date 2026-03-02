@@ -77,6 +77,30 @@ function tacdis_hook_servicebooking ($atts) {
 	}
 }
 
+$retailer_booking_shortcode = 'tacdis_ecom_retailer_booking';
+add_shortcode($retailer_booking_shortcode, 'tacdis_hook_retailer_booking');
+
+function tacdis_hook_retailer_booking($atts) {
+	if (exclude_shortcode()) {
+		return;
+	}
+
+	try {
+		ob_start();
+
+		$a = shortcode_atts( array(
+			'apikey' => '',
+			'services' => 'windowrepair',
+		), $atts);
+
+		echo '<script type="text/javascript" src="https://ecom-cdn.tacdis.com/ecom-retailer-booking/production/js/ecom-retailer-booking.umd.js"></script>';
+		echo '<ecom-retailer-booking services="' . esc_attr($a['services']) . '" apikey="' . esc_attr($a['apikey']) . '"></ecom-retailer-booking>';
+	}
+	finally {
+		return ob_get_clean();
+	}
+}
+
 add_shortcode($windowrepair_shortcode, 'tacdis_hook_windowrepair');
 
 function tacdis_hook_windowrepair ($atts) {
