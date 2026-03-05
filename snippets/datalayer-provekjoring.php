@@ -104,11 +104,14 @@ add_action("wp_footer", function() {
             return phone;
         }
 
+        var pushed = {};
+
         function captureAndPush(formEl) {
             var formIdInput = formEl.querySelector('input[name="form_id"]');
             var formId = formIdInput ? formIdInput.value : '';
             var config = formConfig[formId];
             if (!config) return;
+            if (pushed[formId]) return;
 
             var merke = '';
             var lokasjon = '';
@@ -139,6 +142,8 @@ add_action("wp_footer", function() {
 
             if (!epost && !telefon) return;
 
+            pushed[formId] = true;
+
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: 'provekjoring_submit',
@@ -159,6 +164,48 @@ add_action("wp_footer", function() {
         // Backup: lytt også på frmFormComplete for AJAX-skjemaer
         jQuery(document).on('frmFormComplete', function(event, form) {
             captureAndPush(form);
+        });
+
+        // Volvo/Polestar redirect-klikk (disse sender aldri skjemaet)
+        jQuery(document).on('click', 'a[href*="volvocars.com/no/test-drive"], a[href*="polestar.com/no/test-drive"]', function(e) {
+            var link = this;
+            var href = link.href || '';
+            var merke = href.indexOf('polestar.com') !== -1 ? 'Polestar' : 'Volvo';
+            var lokasjon = '';
+
+            if (merke === 'Volvo') {
+                if (href.indexOf('AD4PK') !== -1) lokasjon = 'Porsgrunn';
+                else if (href.indexOf('FC3JA') !== -1) lokasjon = 'Arendal';
+
+                if (!lokasjon) {
+                    var avd = getFieldValueById('119') || getFieldValueById('701');
+                    if (avd) lokasjon = avd.replace(/^Volvo\s+/, '');
+                }
+            } else {
+                lokasjon = 'Porsgrunn';
+            }
+
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'provekjoring_redirect',
+                merke: merke,
+                lokasjon: lokasjon,
+                redirect_url: href,
+                eventCallback: function() {
+                    // Naviger etter GTM har fanget eventet
+                    if (link.target === '_blank') {
+                        window.open(href, '_blank');
+                    } else {
+                        document.location = href;
+                    }
+                },
+                eventTimeout: 500
+            });
+
+            console.log('dataLayer push: provekjoring_redirect', {merke: merke, lokasjon: lokasjon, redirect_url: href});
+
+            // Stopp default navigering - eventCallback håndterer det
+            e.preventDefault();
         });
     })();
     </script>
