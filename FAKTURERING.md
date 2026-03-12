@@ -47,6 +47,7 @@
 | 2026-03-02 | 0.5 | Porsgrunn AS (100009) | Utvikling | Ny Tacdis ecom-retailer-booking på Porsgrunn servicebooking-side - ny shortcode i tacdis-ecom plugin, erstattet gammel servicebooking med ny web component | Ufakturert |
 | 2026-03-04 | 0.5 | Porsgrunn AS (100009) | Bugfix | Fjernet "Bestill hjulskift Autostrada Porsgrunn" fra navigasjonsmeny (Verksted > Dekk og dekkhotell) | Ufakturert |
 | 2026-03-05 | 2.0 | Bil AS (100004) | Utvikling | dataLayer tracking for alle 6 prøvekjøring-skjemaer (form 47, 9, 42, 32, 41, 44) - provekjoring_submit event med merke, lokasjon, epost, telefon til GTM/GA4. Code Snippet #44 | Ufakturert |
+| 2026-03-12 | 0.5 | Arendal AS (100008) | Utvikling | Ny Tacdis ecom-retailer-booking på Arendal servicebooking-side (side 1048) - erstattet gammel servicebooking-shortcode med ny web component, API-nøkkel fra Tacdis | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -61,7 +62,7 @@
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
 | Autostrada Bil AS | 100004 | 10.25 |
-| Autostrada Arendal AS | 100008 | 0 |
+| Autostrada Arendal AS | 100008 | 0.5 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0.25 |
 | Autostrada Porsgrunn AS | 100009 | 1.75 |
@@ -70,7 +71,7 @@
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 16.25 timer**
+**Totalt ufakturert: 16.75 timer**
 
 ---
 
