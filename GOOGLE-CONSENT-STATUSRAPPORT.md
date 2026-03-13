@@ -115,6 +115,6 @@ GA4 gtag.js er FJERNET fra frontend (ikke lenger i HTML).
 
 | Problem | Vår fix (WordPress) | Tracking-ekspert | Status |
 |---------|-------------------|------------------|--------|
-| Manglende lenke til Google Business Data Responsibility | Lenke lagt til i begge personvernerklæringer | Ingen handling nødvendig | Ferdig |
+| Manglende lenke til Google Business Data Responsibility | Lenke lagt til i begge personvernerklæringer + direkte i Cookie Information consent-banner (2026-03-13) | Ingen handling nødvendig | Ferdig |
 | Samtykkesignaler ikke riktig konfigurert | Cookie Information lastes nå FØR GTM, Site Kit gtag fjernet | Verifiser consent-innstillinger på tags i GTM | Krever verifisering |
 | Cookies settes før samtykke | Script-rekkefølge fikset, Site Kit gtag fjernet | Test at cookies ikke settes før samtykke | Krever verifisering |
