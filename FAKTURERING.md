@@ -50,6 +50,7 @@
 | 2026-03-12 | 0.5 | Arendal AS (100008) | Utvikling | Ny Tacdis ecom-retailer-booking på Arendal servicebooking-side (side 1048) - erstattet gammel servicebooking-shortcode med ny web component, API-nøkkel fra Tacdis | Ufakturert |
 | 2026-03-12 | 0.5 | Bil AS (100004) | Innhold | Fjernet utgått Mercedes EQB fra prøvekjøring-skjemaer - Form 40 (felt 516) og Form 47 (felt 705) | Ufakturert |
 | 2026-03-13 | 0.5 | Bil AS (100004) | Bugfix | Google consent: lagt til lenke til Google Business Data Responsibility Site direkte i Cookie Information consent-banner (HTML template) | Ufakturert |
+| 2026-03-27 | 2.5 | Bil AS (100004) | Oppsett | Ny avdeling XPENG Seljord - prøvekjøring-skjemaer (Form 41+47, felt + email actions → ingunn@autostrada.com), avdelingsside med Bricks (ID 31246), åpningstider snippet+popup, WP Grid Builder grid, navigasjonsmeny, kontakt-knapper på XPENG-side + car template + avdelingsoversikt | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -63,7 +64,7 @@
 
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 11.25 |
+| Autostrada Bil AS | 100004 | 13.75 |
 | Autostrada Arendal AS | 100008 | 0.5 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0.25 |
@@ -73,7 +74,7 @@
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 17.75 timer**
+**Totalt ufakturert: 20.25 timer**
 
 ---
 
