@@ -51,8 +51,8 @@
 | 2026-03-12 | 0.5 | Bil AS (100004) | Innhold | Fjernet utgått Mercedes EQB fra prøvekjøring-skjemaer - Form 40 (felt 516) og Form 47 (felt 705) | Ufakturert |
 | 2026-03-13 | 0.5 | Bil AS (100004) | Bugfix | Google consent: lagt til lenke til Google Business Data Responsibility Site direkte i Cookie Information consent-banner (HTML template) | Ufakturert |
 | 2026-03-27 | 2.5 | Bil AS (100004) | Oppsett | Ny avdeling XPENG Seljord - prøvekjøring-skjemaer (Form 41+47, felt + email actions → ingunn@autostrada.com), avdelingsside med Bricks (ID 31246), åpningstider snippet+popup, WP Grid Builder grid, navigasjonsmeny, kontakt-knapper på XPENG-side + car template + avdelingsoversikt | Ufakturert |
-| 2026-04-16 | 0.5 | Bil AS (100004) | Oppsett | Google Search Console verifisering - lastet opp HTML-verifiseringsfil (google65fdb7981766eea5.html) til rot av autostrada.no via SCP | Ufakturert |
-| 2026-04-16 | 0.5 | Bil AS (100004) | Innhold | Lagt til Mercedes-Benz GLC i prøvekjøring-skjemaer - Form 47 (felt 705) og Form 42 (felt 568) | Ufakturert |
+| 2026-04-16 | 0.25 | Bil AS (100004) | Oppsett | Google Search Console verifisering - lastet opp HTML-verifiseringsfil (google65fdb7981766eea5.html) til rot av autostrada.no via SCP | Ufakturert |
+| 2026-04-16 | 0.25 | Bil AS (100004) | Innhold | Lagt til Mercedes-Benz GLC i prøvekjøring-skjemaer - Form 47 (felt 705) og Form 42 (felt 568), fikset Kongsberg other-felt bug | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -66,7 +66,7 @@
 
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 14.75 |
+| Autostrada Bil AS | 100004 | 14.25 |
 | Autostrada Arendal AS | 100008 | 0.5 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0.25 |
@@ -76,7 +76,7 @@
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 21.25 timer**
+**Totalt ufakturert: 20.75 timer**
 
 ---
 
