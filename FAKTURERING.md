@@ -53,6 +53,7 @@
 | 2026-03-27 | 2.5 | Bil AS (100004) | Oppsett | Ny avdeling XPENG Seljord - prøvekjøring-skjemaer (Form 41+47, felt + email actions → ingunn@autostrada.com), avdelingsside med Bricks (ID 31246), åpningstider snippet+popup, WP Grid Builder grid, navigasjonsmeny, kontakt-knapper på XPENG-side + car template + avdelingsoversikt | Ufakturert |
 | 2026-04-16 | 0.25 | Bil AS (100004) | Oppsett | Google Search Console verifisering - lastet opp HTML-verifiseringsfil (google65fdb7981766eea5.html) til rot av autostrada.no via SCP | Ufakturert |
 | 2026-04-16 | 0.25 | Bil AS (100004) | Innhold | Lagt til Mercedes-Benz GLC i prøvekjøring-skjemaer - Form 47 (felt 705) og Form 42 (felt 568), fikset Kongsberg other-felt bug | Ufakturert |
+| 2026-05-27 | 1.5 | Bil AS (100004) | Bugfix | Spam-beskyttelse Formidable Forms - akutt bot-angrep på "Vi kjøper bilen din" (745 spam-submissions fra 108.175.5.162 på 15 min). Slettet spam-entries, opprettet Code Snippet #46 med honeypot + time-trap globalt for alle skjemaer + rate limit 3/10min for form 7. Verifisert aktiv på form 7 og form 9. | Ufakturert |
 
 ## Driftsavtale (ikke fakturerbart)
 
@@ -66,7 +67,7 @@
 
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 14.25 |
+| Autostrada Bil AS | 100004 | 15.75 |
 | Autostrada Arendal AS | 100008 | 0.5 |
 | Autostrada Kongsberg AS | 100006 | 2.5 |
 | Autostrada Notodden AS | 100013 | 0.25 |
@@ -76,7 +77,7 @@
 | Autostrada Tønsberg AS | 100016 | 1.0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 20.75 timer**
+**Totalt ufakturert: 22.25 timer**
 
 ---
 
