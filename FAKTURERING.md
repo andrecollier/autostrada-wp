@@ -25,32 +25,32 @@
 
 | Dato | Timer | Avdeling | Type | Beskrivelse | Status |
 |------|-------|----------|------|-------------|--------|
-| 2025-12-10 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks åpningstider - shortcode bug, opprettet popup-template, koblet til side | Ufakturert |
-| 2025-12-10 | 0.5 | Bil AS (100004) | Bugfix | Polestar-siden krasjet på iPhone - komprimert mobil-bakgrunnsbilde (6.6MB→247KB), ryddet opp i global JS | Ufakturert |
-| 2025-12-10 | 0.5 | Polestar Porsgrunn AS (TBD) | Oppsett | Ny avdeling Polestar Porsgrunn - avdelingsside, åpningstider-snippet, popup-template, WP Grid Builder grid (ID 32) | Ufakturert |
-| 2025-12-10 | 0.5 | Bil AS (100004) | Bugfix | Div småfikser: Tønsberg popup-tittel, Porsgrunn lørdag 11-14, XPENG popup targetSelector | Ufakturert |
-| 2025-12-11 | 0.5 | Bil AS (100004) | Utvikling | Meld din interesse-knapp for bil-sider - dynamisk knapp basert på ACF-felt, fungerer på alle bil-sider | Ufakturert |
-| 2025-12-20 | 3.0 | Bil AS (100004) | Utvikling | Porsche Center Porsgrunn - endret bilderekkefølge for fremhevet bilde til samme som FINN.no (første bilde i stedet for siste) på både arkivside og bilsider | Ufakturert |
-| 2026-01-05 | 0.5 | Porsgrunn AS (100009) | Bugfix | Porsgrunn åpningstider viste feil lørdag-tid - feilsøkt og fjernet gammel kode, lagt til test-parameter (?test_day) i snippet 7 for enklere testing | Ufakturert |
-| 2026-01-13 | 2.0 | Kongsberg AS (100006) | Utvikling | Peugeot forhandler Kongsberg - ny Bricks template car-single-peugeot (ID 30612) med kontaktknapper Notodden+Kongsberg, Formidable Forms avdelingsvalg i prøvekjøring-skjema (form 32+47), email routing til thomas@autostrada.com | Ufakturert |
-| 2026-01-27 | 0.5 | Kongsberg AS (100006) | Bugfix | Fiks prøvekjøring e-post action (ID 30616) - feil conditional logic format og manglende bilmerke-betingelse førte til at Thomas fikk XPENG-forespørsler med Peugeot-emne | Ufakturert |
-| 2026-01-30 | 0.5 | Bil AS (100004) | Bugfix | Byttet om Bricks-innhold og post_content mellom Arendal (30796) og Seljord (30575) artiklene - innholdet var plassert på feil post, re-serialisert Bricks-data, flushet cache | Ufakturert |
-| 2026-02-03 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks XPENG prøvekjøring e-postrouting (Form 47) - Tønsberg var lagret som "other" i database (bug), la til som vanlig option, oppdatert email action (ID 28586) condition og e-post til tonsberg@autostrada.com, skjult tom radio-knapp med CSS | Ufakturert |
-| 2026-02-04 | 0.5 | Bil AS (100004) | Oppsett | Testside for ny VCRS Servicebooking-modul (side 30854) - opprettet draft-side via WP-CLI, lagt inn script og custom element, publisert med noindex, 100vh sentrert container | Ufakturert |
-| 2026-02-05 | 0.25 | Porsgrunn AS (100009) | Oppsett | Testside for VCRS vindusreparasjon-modul (side 30857) - windowrepair booking widget, publisert med noindex | Ufakturert |
-| 2026-02-06 | 0.5 | Bil AS (100004) | Oppsett | BCC Andreas.Fahre@autostrada.com på alle XPENG-skjemaer - Form 41 (3 aksjoner) og Form 47 (3 aksjoner), totalt 6 e-postaksjoner oppdatert | Ufakturert |
-| 2026-02-12 | 0.25 | Bil AS (100004) | Oppsett | Testside for VCRS Ecom Retailer Booking (side 30973) - alle tjenester (carcare, windscreenchiprepair, windowreplace, service, carrepair, pkk, wheelshift), publisert med noindex | Ufakturert |
-| 2026-02-13 | 0.5 | Bil AS (100004) | Bugfix | Volvo ES90 prøvekjøringsknapp skjult av YellowPencil CSS - fjernet display:none fra _wt_css postmeta (post 26296) og custom-264.css, knapp lenker til /bestill-provekjoring-volvo/ | Ufakturert |
-| 2026-02-17 | 0.5 | Bil AS (100004) | Bugfix | Fiks Volvo prøvekjøring i skjema 47 - XPENG-modell felt (710) var korrupt, fikset serialized data, lagt til JavaScript på /provekjoring/ som sender Volvo-kunder direkte til volvocars.com basert på valgt avdeling (Porsgrunn/Arendal) | Ufakturert |
-| 2026-02-25 | 0.25 | Notodden AS (100013) | Bugfix | Fiks Profile Order Manager - nye ansatte (f.eks. Jostein) ble ikke vist i sorteringslisten, endret logikk til å hente alle ansatte og legge nye på slutten | Ufakturert |
-| 2026-02-27 | 1.0 | Bil AS (100004) | Bugfix | Fiks Google EU Consent Policy-advarsel: Cookie Information-script flyttet til topp av head (FØR GTM/GA4), fjernet duplikat GTM-script, deaktivert Site Kit GA4 frontend snippet (GA4 via GTM), lagt til Google Business Data Responsibility-lenke i begge personvernerklæringer | Ufakturert |
-| 2026-03-02 | 0.5 | Porsgrunn AS (100009) | Utvikling | Ny Tacdis ecom-retailer-booking på Porsgrunn servicebooking-side - ny shortcode i tacdis-ecom plugin, erstattet gammel servicebooking med ny web component | Ufakturert |
-| 2026-03-04 | 0.5 | Porsgrunn AS (100009) | Bugfix | Fjernet "Bestill hjulskift Autostrada Porsgrunn" fra navigasjonsmeny (Verksted > Dekk og dekkhotell) | Ufakturert |
-| 2026-03-05 | 2.0 | Bil AS (100004) | Utvikling | dataLayer tracking for alle 6 prøvekjøring-skjemaer (form 47, 9, 42, 32, 41, 44) - provekjoring_submit event med merke, lokasjon, epost, telefon til GTM/GA4. Code Snippet #44 | Ufakturert |
-| 2026-03-12 | 0.5 | Arendal AS (100008) | Utvikling | Ny Tacdis ecom-retailer-booking på Arendal servicebooking-side (side 1048) - erstattet gammel servicebooking-shortcode med ny web component, API-nøkkel fra Tacdis | Ufakturert |
-| 2026-03-12 | 0.5 | Bil AS (100004) | Innhold | Fjernet utgått Mercedes EQB fra prøvekjøring-skjemaer - Form 40 (felt 516) og Form 47 (felt 705) | Ufakturert |
-| 2026-03-13 | 0.5 | Bil AS (100004) | Bugfix | Google consent: lagt til lenke til Google Business Data Responsibility Site direkte i Cookie Information consent-banner (HTML template) | Ufakturert |
-| 2026-03-27 | 2.5 | Bil AS (100004) | Oppsett | Ny avdeling XPENG Seljord - prøvekjøring-skjemaer (Form 41+47, felt + email actions → ingunn@autostrada.com), avdelingsside med Bricks (ID 31246), åpningstider snippet+popup, WP Grid Builder grid, navigasjonsmeny, kontakt-knapper på XPENG-side + car template + avdelingsoversikt | Ufakturert |
+| 2025-12-10 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks åpningstider - shortcode bug, opprettet popup-template, koblet til side | Fakturert |
+| 2025-12-10 | 0.5 | Bil AS (100004) | Bugfix | Polestar-siden krasjet på iPhone - komprimert mobil-bakgrunnsbilde (6.6MB→247KB), ryddet opp i global JS | Fakturert |
+| 2025-12-10 | 0.5 | Polestar Porsgrunn AS (TBD) | Oppsett | Ny avdeling Polestar Porsgrunn - avdelingsside, åpningstider-snippet, popup-template, WP Grid Builder grid (ID 32) | Fakturert |
+| 2025-12-10 | 0.5 | Bil AS (100004) | Bugfix | Div småfikser: Tønsberg popup-tittel, Porsgrunn lørdag 11-14, XPENG popup targetSelector | Fakturert |
+| 2025-12-11 | 0.5 | Bil AS (100004) | Utvikling | Meld din interesse-knapp for bil-sider - dynamisk knapp basert på ACF-felt, fungerer på alle bil-sider | Fakturert |
+| 2025-12-20 | 3.0 | Bil AS (100004) | Utvikling | Porsche Center Porsgrunn - endret bilderekkefølge for fremhevet bilde til samme som FINN.no (første bilde i stedet for siste) på både arkivside og bilsider | Fakturert |
+| 2026-01-05 | 0.5 | Porsgrunn AS (100009) | Bugfix | Porsgrunn åpningstider viste feil lørdag-tid - feilsøkt og fjernet gammel kode, lagt til test-parameter (?test_day) i snippet 7 for enklere testing | Fakturert |
+| 2026-01-13 | 2.0 | Kongsberg AS (100006) | Utvikling | Peugeot forhandler Kongsberg - ny Bricks template car-single-peugeot (ID 30612) med kontaktknapper Notodden+Kongsberg, Formidable Forms avdelingsvalg i prøvekjøring-skjema (form 32+47), email routing til thomas@autostrada.com | Fakturert |
+| 2026-01-27 | 0.5 | Kongsberg AS (100006) | Bugfix | Fiks prøvekjøring e-post action (ID 30616) - feil conditional logic format og manglende bilmerke-betingelse førte til at Thomas fikk XPENG-forespørsler med Peugeot-emne | Fakturert |
+| 2026-01-30 | 0.5 | Bil AS (100004) | Bugfix | Byttet om Bricks-innhold og post_content mellom Arendal (30796) og Seljord (30575) artiklene - innholdet var plassert på feil post, re-serialisert Bricks-data, flushet cache | Fakturert |
+| 2026-02-03 | 0.5 | Tønsberg AS (100016) | Bugfix | Fiks XPENG prøvekjøring e-postrouting (Form 47) - Tønsberg var lagret som "other" i database (bug), la til som vanlig option, oppdatert email action (ID 28586) condition og e-post til tonsberg@autostrada.com, skjult tom radio-knapp med CSS | Fakturert |
+| 2026-02-04 | 0.5 | Bil AS (100004) | Oppsett | Testside for ny VCRS Servicebooking-modul (side 30854) - opprettet draft-side via WP-CLI, lagt inn script og custom element, publisert med noindex, 100vh sentrert container | Fakturert |
+| 2026-02-05 | 0.25 | Porsgrunn AS (100009) | Oppsett | Testside for VCRS vindusreparasjon-modul (side 30857) - windowrepair booking widget, publisert med noindex | Fakturert |
+| 2026-02-06 | 0.5 | Bil AS (100004) | Oppsett | BCC Andreas.Fahre@autostrada.com på alle XPENG-skjemaer - Form 41 (3 aksjoner) og Form 47 (3 aksjoner), totalt 6 e-postaksjoner oppdatert | Fakturert |
+| 2026-02-12 | 0.25 | Bil AS (100004) | Oppsett | Testside for VCRS Ecom Retailer Booking (side 30973) - alle tjenester (carcare, windscreenchiprepair, windowreplace, service, carrepair, pkk, wheelshift), publisert med noindex | Fakturert |
+| 2026-02-13 | 0.5 | Bil AS (100004) | Bugfix | Volvo ES90 prøvekjøringsknapp skjult av YellowPencil CSS - fjernet display:none fra _wt_css postmeta (post 26296) og custom-264.css, knapp lenker til /bestill-provekjoring-volvo/ | Fakturert |
+| 2026-02-17 | 0.5 | Bil AS (100004) | Bugfix | Fiks Volvo prøvekjøring i skjema 47 - XPENG-modell felt (710) var korrupt, fikset serialized data, lagt til JavaScript på /provekjoring/ som sender Volvo-kunder direkte til volvocars.com basert på valgt avdeling (Porsgrunn/Arendal) | Fakturert |
+| 2026-02-25 | 0.25 | Notodden AS (100013) | Bugfix | Fiks Profile Order Manager - nye ansatte (f.eks. Jostein) ble ikke vist i sorteringslisten, endret logikk til å hente alle ansatte og legge nye på slutten | Fakturert |
+| 2026-02-27 | 1.0 | Bil AS (100004) | Bugfix | Fiks Google EU Consent Policy-advarsel: Cookie Information-script flyttet til topp av head (FØR GTM/GA4), fjernet duplikat GTM-script, deaktivert Site Kit GA4 frontend snippet (GA4 via GTM), lagt til Google Business Data Responsibility-lenke i begge personvernerklæringer | Fakturert |
+| 2026-03-02 | 0.5 | Porsgrunn AS (100009) | Utvikling | Ny Tacdis ecom-retailer-booking på Porsgrunn servicebooking-side - ny shortcode i tacdis-ecom plugin, erstattet gammel servicebooking med ny web component | Fakturert |
+| 2026-03-04 | 0.5 | Porsgrunn AS (100009) | Bugfix | Fjernet "Bestill hjulskift Autostrada Porsgrunn" fra navigasjonsmeny (Verksted > Dekk og dekkhotell) | Fakturert |
+| 2026-03-05 | 2.0 | Bil AS (100004) | Utvikling | dataLayer tracking for alle 6 prøvekjøring-skjemaer (form 47, 9, 42, 32, 41, 44) - provekjoring_submit event med merke, lokasjon, epost, telefon til GTM/GA4. Code Snippet #44 | Fakturert |
+| 2026-03-12 | 0.5 | Arendal AS (100008) | Utvikling | Ny Tacdis ecom-retailer-booking på Arendal servicebooking-side (side 1048) - erstattet gammel servicebooking-shortcode med ny web component, API-nøkkel fra Tacdis | Fakturert |
+| 2026-03-12 | 0.5 | Bil AS (100004) | Innhold | Fjernet utgått Mercedes EQB fra prøvekjøring-skjemaer - Form 40 (felt 516) og Form 47 (felt 705) | Fakturert |
+| 2026-03-13 | 0.5 | Bil AS (100004) | Bugfix | Google consent: lagt til lenke til Google Business Data Responsibility Site direkte i Cookie Information consent-banner (HTML template) | Fakturert |
+| 2026-03-27 | 2.5 | Bil AS (100004) | Oppsett | Ny avdeling XPENG Seljord - prøvekjøring-skjemaer (Form 41+47, felt + email actions → ingunn@autostrada.com), avdelingsside med Bricks (ID 31246), åpningstider snippet+popup, WP Grid Builder grid, navigasjonsmeny, kontakt-knapper på XPENG-side + car template + avdelingsoversikt | Fakturert |
 | 2026-04-16 | 0.25 | Bil AS (100004) | Oppsett | Google Search Console verifisering - lastet opp HTML-verifiseringsfil (google65fdb7981766eea5.html) til rot av autostrada.no via SCP | Ufakturert |
 | 2026-04-16 | 0.25 | Bil AS (100004) | Innhold | Lagt til Mercedes-Benz GLC i prøvekjøring-skjemaer - Form 47 (felt 705) og Form 42 (felt 568), fikset Kongsberg other-felt bug | Ufakturert |
 | 2026-05-27 | 1.5 | Bil AS (100004) | Bugfix | Spam-beskyttelse Formidable Forms - akutt bot-angrep på "Vi kjøper bilen din" (745 spam-submissions fra 108.175.5.162 på 15 min). Slettet spam-entries, opprettet Code Snippet #46 med honeypot + time-trap globalt for alle skjemaer + rate limit 3/10min for form 7. Verifisert aktiv på form 7 og form 9. | Ufakturert |
@@ -65,19 +65,21 @@
 
 ## Sammendrag per avdeling
 
+Alt før april 2026 er fakturert. Tabellen viser **kun ufakturerte timer** (april + mai 2026).
+
 | Avdeling | Kundenr. | Timer ufakturert |
 |----------|----------|------------------|
-| Autostrada Bil AS | 100004 | 15.75 |
-| Autostrada Arendal AS | 100008 | 0.5 |
-| Autostrada Kongsberg AS | 100006 | 2.5 |
-| Autostrada Notodden AS | 100013 | 0.25 |
-| Autostrada Porsgrunn AS | 100009 | 1.75 |
-| Polestar Porsgrunn AS | TBD | 0.5 |
+| Autostrada Bil AS | 100004 | 2.0 |
+| Autostrada Arendal AS | 100008 | 0 |
+| Autostrada Kongsberg AS | 100006 | 0 |
+| Autostrada Notodden AS | 100013 | 0 |
+| Autostrada Porsgrunn AS | 100009 | 0 |
+| Polestar Porsgrunn AS | TBD | 0 |
 | Autostrada Seljord AS | 100007 | 0 |
-| Autostrada Tønsberg AS | 100016 | 1.0 |
+| Autostrada Tønsberg AS | 100016 | 0 |
 | Autostrada X AS | 100012 | 0 |
 
-**Totalt ufakturert: 22.25 timer**
+**Totalt ufakturert: 2.0 timer**
 
 ---
 
